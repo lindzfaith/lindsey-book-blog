@@ -1,0 +1,5 @@
+export { default as Home } from './Home/Home.jsx'
+export { default as Header } from './Header/Header.jsx'
+export { default as Article } from './Article/Article.jsx'
+export { default as Blog } from './Blog/Blog.jsx'
+export { default as Genre } from './Genre/Genre.jsx'

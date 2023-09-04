@@ -1,0 +1,52 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.blog {
+    box-shadow: none;
+    width: 100%;
+    display: flex;
+}
+
+.content {
+    width: 70%;
+    padding: 50px;
+}
+
+article aside {
+    width: 30%;
+    display: flex;
+    padding: 40px 10px;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+article section {
+    height: 100%;
+}
+
+article ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+article ul li {
+    outline: 1px solid black;
+    padding: 5px 3px;
+    margin: 5px 0px;
+    border-radius: 6px;
+    width: fit-content;
+    background-color: antiquewhite;
+}
