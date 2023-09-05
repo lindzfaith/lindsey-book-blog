@@ -21,6 +21,7 @@ function Blog(props) {
         <span>{article.date}</span>
         <h1>{article.title}</h1>
         <section>
+         <h2>Review:</h2>
           <p>{article.content}</p>
         </section>
         <h2>Summary:</h2>
@@ -29,7 +30,7 @@ function Blog(props) {
       <aside>
         <label>Rating: </label>
         <Rating value={article.rating} />
-        <label>Spice: </label>
+        <label>Mature Content: </label>
         <Rating icon={<FavoriteIcon/>} emptyIcon={<FavoriteIcon/>} value={article.spice} />
         <label>Tags</label>
           <ul>

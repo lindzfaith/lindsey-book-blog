@@ -44,3 +44,60 @@ nav a span:hover {
     color: darkgray;
     cursor:pointer;
 }
+
+.short {
+    display: none;
+}
+
+.short-group .menu {
+    display: none;
+    position: absolute;
+    margin-left: -90px;
+    margin-top: 22px;
+    background-color: white;
+    height: fit-content;
+    width: 100px;
+    list-style-type: none;
+    text-align: left;
+}
+
+.short-group .menu a li {
+    padding: 10px;
+}
+
+.short-group .menu a li, .short-group .menu a {
+    width: 100%;
+    padding: 0px;
+}
+
+.short-group .menu a li:hover {
+    background-color: antiquewhite;
+}
+
+@media screen and (max-width: 675px) {
+    .short {
+        display: flex;
+        height: 25px;
+        width: 25px;
+        float: right;
+    }
+    .short-group:focus .menu, .short-group:hover .menu, .short-group:active .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        box-shadow: 1px 1px 2px rgb(112, 112, 112);
+    }
+    a {
+        width: 70%;
+    }
+    h2 {
+        width: 100%;
+    }
+    nav {
+        justify-content: flex-end;
+    }
+    .long {
+        display: none;
+    }
+}

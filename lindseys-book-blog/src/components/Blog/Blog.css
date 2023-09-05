@@ -9,12 +9,14 @@ body {
 }
 
 .content {
-    width: 70%;
-    padding: 50px;
+    width: 60%;
+    padding: 5%;
+    white-space: pre-line;
+    height: 100%;
 }
 
 article aside {
-    width: 30%;
+    width: 40%;
     display: flex;
     padding: 40px 10px;
     font-size: 20px;
@@ -28,8 +30,14 @@ h1 {
     font-size: 50px;
 }
 
+.content section {
+    height: fit-content;
+    display: block;
+}
+
 p {
     font-size: 20px;
+    height: fit-content;
 }
 
 article section {
@@ -49,4 +57,17 @@ article ul li {
     border-radius: 6px;
     width: fit-content;
     background-color: antiquewhite;
+}
+
+@media screen and (max-width: 475px) {
+    .blog {
+        flex-direction: column-reverse;
+    }
+    article aside, .content {
+        width: 90%;
+        padding: 0;
+    }
+    article {
+        height: 100%;
+    }
 }
